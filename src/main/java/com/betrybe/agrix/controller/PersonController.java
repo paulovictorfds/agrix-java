@@ -1,4 +1,4 @@
-package com.betrybe.agrix.ebytr.staff.controller;
+package com.betrybe.agrix.controller;
 
 import com.betrybe.agrix.controller.dto.PersonDto;
 import com.betrybe.agrix.ebytr.staff.entity.Person;
