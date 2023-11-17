@@ -1,6 +1,7 @@
 package com.betrybe.agrix.controller;
 
-import com.betrybe.agrix.controller.dto.PersonDto;
+import com.betrybe.agrix.controller.dto.PersonRequestDto;
+import com.betrybe.agrix.controller.dto.PersonResponseDto;
 import com.betrybe.agrix.ebytr.staff.entity.Person;
 import com.betrybe.agrix.ebytr.staff.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +26,9 @@ public class PersonController {
   /** Route to POST a Person. */
   @PostMapping()
   @ResponseStatus(HttpStatus.CREATED)
-  public PersonDto save(@RequestBody PersonDto personDto) {
-    Person newPerson = personService.create(personDto.toEntity());
+  public PersonResponseDto save(@RequestBody PersonRequestDto personRequestDto) {
+    Person newPerson = personService.create(personRequestDto.toEntity());
 
-    return PersonDto.fromEntity(newPerson);
+    return PersonResponseDto.fromEntity(newPerson);
   }
 }
