@@ -36,12 +36,12 @@ O projeto **Agrix** é uma aplicação web para gestão e monitoramento de fazen
   
   1. **Clonar o Repositório**:
      ```bash
-     git clone https://github.com/paulovictorfds/projeto-agrix-java.git
+     git clone https://github.com/paulovictorfds/agrix-java.git
      ```
 
   2. **Acessar o Diretório**:
      ```bash
-     cd projeto-agrix-java
+     cd agrix-java
      ```
 
   3. **Compilar e Executar**:
